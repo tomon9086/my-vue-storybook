@@ -1,12 +1,12 @@
-import { configure } from "@storybook/vue"
+const configure = require("@storybook/vue").configure
 
-import Vue from "vue"
-import Vuex from "vuex"
+const Vue = require("vue").default
+const Vuex = require("vuex").default
 
 Vue.use(Vuex)
 
 function loadStories() {
-  require("../src/stories")
+	require("../src/stories")
 }
 
 configure(loadStories, module)

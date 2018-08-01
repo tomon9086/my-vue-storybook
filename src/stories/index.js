@@ -1,9 +1,9 @@
-import Vue from "vue"
-import Vuex from "vuex"
+const Vue = require("vue").default
+const Vuex = require("vuex").default
 
-import { storiesOf } from "@storybook/vue"
+const storiesOf = require("@storybook/vue").storiesOf
 
-import Hello from "./Hello.vue"
+const Hello = require("./Hello.vue").default
 
 Vue.component("Hello", Hello)
 
